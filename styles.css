@@ -1,0 +1,103 @@
+body {
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat-header h1 {
+    color: #fff;
+    font-size: 28px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.chat-header i {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.chat {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg');
+    /* Reemplazar con la URL de la imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    width: 320px;
+    /* Tamaño de un teléfono */
+    height: 400px;
+    /* Tamaño del área de mensajes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Alinear elementos al final del contenedor */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button i {
+    font-size: 18px;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user-message {
+    background-color: #007BFF;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.chat-response {
+    background-color: #00C853;
+    color: #fff;
+    align-self: flex-start;
+}
